@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewTarefa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="3dp"
+            android:text="@string/nome_tarefa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="115dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="left"
+            android:padding="3dp"
+            android:text="@string/email"
+            app:layout_constraintEnd_toStartOf="@+id/textView2p"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTarefa" />
+
+        <TextView
+            android:id="@+id/textView2p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:padding="3dp"
+            android:text="@string/doispontos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDescr"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTarefa" />
+
+        <TextView
+            android:id="@+id/textViewDescr"
+            android:layout_width="256dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="1dp"
+            android:padding="3dp"
+            android:text="@string/descricao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTarefa" />
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="336dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/textview"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

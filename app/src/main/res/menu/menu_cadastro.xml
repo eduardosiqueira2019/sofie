@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.optionmenu.MainActivity">
+
+    <item  android:id="@+id/excluir"
+        android:title="@string/excluir"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_exc"/>
+    <item  android:id="@+id/gravar"
+        android:title="@string/gravar"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_check"/>
+
+</menu>
